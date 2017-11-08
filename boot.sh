@@ -4,7 +4,7 @@ export WORKDIR=$PWD
 export RESTART_TIMEOUT=90
 export SLEEP_INTERVAL=120
 
-if ( ($RESTART_TIMEOUT > $SLEEP_INTERVAL) )
+if (($RESTART_TIMEOUT > $SLEEP_INTERVAL))
 then
   echo "SLEEP_INTERVAL must be greater than RESTART_TIMEOUT!"
   exit 1
