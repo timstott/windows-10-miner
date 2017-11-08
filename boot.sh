@@ -15,7 +15,7 @@ do
   git remote update origin
   echo "Pulled delta"
 
-  if [ "$(git status -u no | grep 'Your branch is up-to-date')" ]
+  if [ $(git rev-list --count master..origin/master) -eq 0 ]
   then
     echo "No updates"
   else
