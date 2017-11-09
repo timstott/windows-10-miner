@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export WORKDIR=$PWD
 export RESTART_TIMEOUT=90
 export SLEEP_INTERVAL=120
 
@@ -9,6 +8,8 @@ then
   echo "SLEEP_INTERVAL must be greater than RESTART_TIMEOUT!"
   exit 1
 fi
+
+cmd.exe /C "cd claymore-v10-0 && start start_only_eth.bat"
 
 while true
 do
