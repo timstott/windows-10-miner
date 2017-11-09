@@ -1,14 +1,14 @@
 # Windows 10 Pro Miner
 
+## Windows OS Configuration
+
+0. Go to `Settings`, search `For developers settings`, activate `Developer mode`.
+0. Go to `Start menu`, search `Turn Windows features on or off`, activate `Windows Subsystem for Linux`.
+0. Go to `Windows Store`, search `Ubuntu` and install.
+
 ## Installation
 
-Go to `Settings`, search `For developers settings`, activate `Developer mode`.
+Clone this repository to Desktop. Create a shortcut to `boot.sh` (e.g. Send to Desktop).
 
-Go to `Start menu`, search `Turn Windows features on or off`, activate `Windows Subsystem for Linux`.
-
-Go to `Windows Store`, searhc `Ubuntu` and install.
-
-Clone this repository to Desktop.
-
-Go to `Run`, type `shell:startup` which opens the user `Startup` folder. Add
-a shortcut to `boot.sh` in the folder.
+Go to `Start menu` search `Run`, type `shell:startup` (will the user `Startup` folder).
+Move the `boot.sh` shortcut to opened `Startup` folder.
