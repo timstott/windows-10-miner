@@ -16,7 +16,7 @@ then
   exit 1
 fi
 
-# cmd.exe /C "cd claymore-v10-0 && start start_only_eth.bat"
+cmd.exe /C "cd claymore-v10-0 && start start_only_eth.bat"
 
 while true
 do
