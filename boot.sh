@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export RESTART_TIMEOUT=90
-export SLEEP_INTERVAL=120
+export SLEEP_INTERVAL=30
 
 log()
 {
@@ -10,16 +10,13 @@ log()
 
 log "Started boot.sh"
 
-if (($RESTART_TIMEOUT > $SLEEP_INTERVAL))
-then
-  log "SLEEP_INTERVAL must be greater than RESTART_TIMEOUT!"
-  exit 1
-fi
-
 cmd.exe /C "cd claymore-v10-0 && start start_only_eth.bat"
 
 while true
 do
+  log "Sleep $SLEEP_INTERVAL seconds"
+  sleep $SLEEP_INTERVAL
+
   log "$(git remote update origin)"
   log "Pulled delta"
 
@@ -33,7 +30,4 @@ do
     sh -c 'sleep 3; git reset --hard origin/master; echo "Updated code"; sleep 10' &
     exit 0
   fi
-
-  log "Sleep $SLEEP_INTERVAL seconds"
-  sleep $SLEEP_INTERVAL
 done
