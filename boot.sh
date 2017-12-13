@@ -10,7 +10,7 @@ log()
 
 log "Started boot.sh"
 
-sh -c 'cmd.exe /C "cd claymore-v10-0 && start start_only_eth.bat"'
+sh -c 'cmd.exe /C "cd claymore-v10-0 && start start_with_config.bat"'
 
 while true
 do
