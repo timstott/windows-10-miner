@@ -12,8 +12,8 @@
 -fanmax 100
 -cclock 1130
 -mclock 2150
--cvddc 875
--mvddc 875
+-cvddc 850
+-mvddc 850
 -mport -3333
 -dcoin sia
 -dpool stratum+tcp://sia-eu2.nanopool.org:7777
