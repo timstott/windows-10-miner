@@ -21,3 +21,4 @@
 -dpsw x
 -dcri 13
 -gser 1
+-minspeed 88
