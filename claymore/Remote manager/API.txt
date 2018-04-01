@@ -25,6 +25,23 @@ Gets current statistics.
 
 ----------------
 REQUEST:
+{"id":0,"jsonrpc":"2.0","method":"miner_getstat2"}
+
+RESPONSE:
+Same as "miner_getstat1" but also appends additional information:
+
+- ETH accepted shares for every GPU.
+- ETH rejected shares for every GPU.
+- ETH invalid shares for every GPU.
+- DCR accepted shares for every GPU.
+- DCR rejected shares for every GPU.
+- DCR invalid shares for every GPU.
+- PCI bus index for every GPU.
+
+
+
+----------------
+REQUEST:
 
 {"id":0,"jsonrpc":"2.0","method":"miner_restart"}
 
@@ -50,7 +67,7 @@ Calls "reboot.bat" for Windows, or "reboot.bash" (or "reboot.sh") for Linux.
 
 ----------------
 REQUEST:
-{"id":0,"jsonrpc":"2.0","method":"control_gpu", "params":[0, 1]}
+{"id":0,"jsonrpc":"2.0","method":"control_gpu", "params":["0", "1"]}
 
 RESPONSE:
 none.

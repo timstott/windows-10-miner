@@ -1,4 +1,0 @@
-POOL: stratum+tcp://sia-eu1.nanopool.org:7777, WALLET: e51d669a8d5df110469215fd0daf40535dccf5f563259223821c039abfde52c9bd4aa443f5f8/buster/mining-rigs-cooperative@googlegroups.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
-POOL: stratum+tcp://sia-us-east1.nanopool.org:7777, WALLET: e51d669a8d5df110469215fd0daf40535dccf5f563259223821c039abfde52c9bd4aa443f5f8/buster/mining-rigs-cooperative@googlegroups.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
-POOL: stratum+tcp://sia-us-west1.nanopool.org:7777, WALLET: e51d669a8d5df110469215fd0daf40535dccf5f563259223821c039abfde52c9bd4aa443f5f8/buster/mining-rigs-cooperative@googlegroups.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
-POOL: stratum+tcp://sia-asia1.nanopool.org:7777, WALLET: e51d669a8d5df110469215fd0daf40535dccf5f563259223821c039abfde52c9bd4aa443f5f8/buster/mining-rigs-cooperative@googlegroups.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
